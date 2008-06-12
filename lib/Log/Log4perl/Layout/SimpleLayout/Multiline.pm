@@ -6,7 +6,7 @@ use base qw/Log::Log4perl::Layout::SimpleLayout/;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub render {
 	my $self = shift;
