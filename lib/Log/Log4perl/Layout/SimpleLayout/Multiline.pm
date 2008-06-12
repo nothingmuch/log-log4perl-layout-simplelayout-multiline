@@ -12,10 +12,10 @@ sub render {
 	my $self = shift;
 	my $output = $self->SUPER::render(@_);
 
-	$output =~ /([A-Z]+ - )/;
-
-	my $spaces = ' ' x length($1);
-	$output =~ s/(\r?\n|\r)(?!$)/$1$spaces\t/g;
+	if ( $output =~ /([A-Z]+ - )/ ) {
+        my $spaces = ' ' x length($1);
+        $output =~ s/(\r?\n|\r)(?!$)/$1$spaces\t/g;
+    }
 
 	$output;
 }
