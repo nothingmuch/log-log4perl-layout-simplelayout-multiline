@@ -28,23 +28,22 @@ __END__
 
 =head1 NAME
 
-Log::Log4perl::Layout::SimpleLayout::Multiline - 
+Log::Log4perl::Layout::SimpleLayout::Multiline - Handle multiple lines with the
+L<Log::Log4perl::Layout::SimpleLayout>
 
 =head1 SYNOPSIS
 
-	use Log::Log4perl::Layout::SimpleLayout::Multiline;
+    # see Log::Log4perl
 
 =head1 DESCRIPTION
 
-=head1 BUGS
-
-None that we are aware of. Of course, if you find a bug, let us know, and we will be sure to fix it. 
-
-=head1 CODE COVERAGE
-
-We use B<Devel::Cover> to test the code coverage of the tests, please refer to COVERAGE section of the L<Verby> module for more information.
+This is a drop in replacement for L<Log::Log4perl::Layout::SimpleLayout> that
+formats multiple lines with indentation aligned according to the metadata
+prefix that L<Log::Log4perl::Layout::SimpleLayout> adds.
 
 =head1 SEE ALSO
+
+L<Log::Log4perl>
 
 =head1 AUTHOR
 
@@ -52,11 +51,11 @@ Yuval Kogman, E<lt>nothingmuch@woobling.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2005 by Infinity Interactive, Inc.
+Copyright 2005, 2008 by Infinity Interactive, Inc.
 
 L<http://www.iinteractive.com>
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+it under the same terms as Perl itself.
 
 =cut
